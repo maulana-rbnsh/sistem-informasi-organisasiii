@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistem Informasi Organisasi BEM">
+    <title>BEM Information System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo">BEM</div>
+
+            <div>
+                <h2>ORGANISASI</h2>
+                <span>Information System</span>
+            </div>
+        </div>
+
+        <div class="menu-title">MENU UTAMA</div>
+
+        <nav class="navigation">
+
+            <button class="nav active" data-page="dashboard">
+                <span>⌂</span>
+                Dashboard
+            </button>
+
+            <button class="nav" data-page="anggota">
+                <span>♟</span>
+                Data Anggota
+            </button>
+
+            <button class="nav" data-page="struktur">
+                <span>▦</span>
+                Struktur Organisasi
+            </button>
+
+            <button class="nav" data-page="kegiatan">
+                <span>◷</span>
+                Kegiatan
+            </button>
+
+            <button class="nav" data-page="proker">
+                <span>☷</span>
+                Program Kerja
+            </button>
+
+            <button class="nav" data-page="pengumuman">
+                <span>!</span>
+                Pengumuman
+            </button>
+
+        </nav>
+
+        <div class="sidebar-info">
+            <small>ORGANISASI BEM</small>
+            <p>
+                Sistem informasi untuk mengelola
+                data dan kegiatan organisasi.
+            </p>
+        </div>
+
+        <div class="sidebar-footer">
+            <strong>© 2026 BEM</strong>
+            <span>Organization Information System</span>
+        </div>
+
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <button class="mobile-menu" id="menuBtn">
+                ☰
+            </button>
+
+            <div class="heading">
+                <h1 id="pageTitle">Dashboard</h1>
+                <p id="pageDescription">
+                    Ringkasan informasi organisasi.
+                </p>
+            </div>
+
+            <div class="admin">
+                <div class="admin-avatar">AD</div>
+
+                <div>
+                    <strong>Admin BEM</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+
+        </header>
+
+        <section id="content" class="content"></section>
+
+    </main>
+
+</div>
+
+
+<!-- MODAL -->
+<div class="modal hidden" id="modal">
+
+    <div class="modal-box">
+
+        <div class="modal-header">
+
+            <div>
+                <h2 id="modalTitle">Tambah Data</h2>
+                <p>Lengkapi informasi berikut.</p>
+            </div>
+
+            <button id="closeModal">×</button>
+
+        </div>
+
+        <form id="modalForm"></form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
